@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://127.0.0.1:5500/css/webdev/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athenia High School - Saharanpur</title>
+    <style>
+        /* General reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header section */
+        header {
+            background-color: #3f51b5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        /* Navigation bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #283593;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Welcome section */
+        .welcome {
+            background: url('https://www.eduminatti.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Feduminatti-com%2Fimage%2Fupload%2Fq_auto%2Cf_png%2F%2Fgallery%2Futtar%2520pradesh%2FG1736.png&w=1200&q=75') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .welcome h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+        }
+
+        .welcome p {
+            font-size: 1.1em;
+        }
+
+        /* About section */
+        .about, .academics, .facilities, .contact {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: auto;
+            text-align: center;
+        }
+
+        h3 {
+            color: #3f51b5;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        /* Image galleries */
+        .image-gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            justify-content: center;
+        }
+
+        .image-gallery img {
+            height: 170px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Facilities section */
+        .facilities-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .facility-item {
+            background-color: #e8eaf6;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 45%;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        /* Contact form */
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+            margin: auto;
+        }
+
+        .contact input, .contact textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .contact button {
+            padding: 10px;
+            background-color: #3f51b5;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+
+        .contact button:hover {
+            background-color: #283593;
+        }
+        body {
+            overflow-x: hidden;
+            color: #333;
+            position: relative;
+        }
+
+        /* Moving Gradient Background */
+        .animated-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #f0f8ff, #dbeff5, #ffdd67, #4a90e2);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            z-index: -2;
+        }
+
+        /* Particle Overlay */
+        .particle-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        /* Keyframes for Background Animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Athenia High School</h1>
+        <p>Navada-Tiwaya Road, Saharanpur, Uttar Pradesh,247001</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="http://127.0.0.1:5500/css/webdev/index.html#about">About</a>
+        <a href="http://127.0.0.1:5500/css/webdev/index.html#academics">Academics</a>
+        <a href="http://127.0.0.1:5500/css/webdev/index.html#facilities">Facilities</a>
+        <a href="http://127.0.0.1:5500/css/webdev/index.html#contact">Contact Us</a>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <h2>Welcome to Athenia High School</h2>
+        <p>Providing quality education and a nurturing environment for every student.</p>
+    </section>
+
+    <!-- About Section with Image Gallery -->
+    <section id="about" class="about">
+        <h3>About Us</h3>
+        <p>Athenia High School is committed to fostering an environment where students can learn, grow, and excel.</p>
+        <div class="image-gallery">
+            <img src="./index_files/03 Seamless Inside-Outside.jpg" alt="School Building">
+            <img src="./index_files/Athenia High School-Independence Day Celebrations.png" alt="Students Activity">
+            <img src="./index_files/art3.2.jpg" alt="School Library">
+        </div>
+    </section>
+
+    <!-- Academics Section with Visuals -->
+    <section id="academics" class="academics">
+        <h3>Academics</h3>
+        <p>We offer a diverse curriculum that emphasizes both traditional and modern learning approaches.</p>
+        <div class="image-gallery">
+            <img src="./index_files/379_345_6204204_323371692_4.width-1000.format-webp.webp" alt="Classroom">
+            <img src="./index_files/Students-classroom-atheistic-activity-Salavdor-Bahia-Brazail-2018.jpg" alt="Students Studying">
+            <img src="./index_files/EHPS1s8UYAEZYuI.jpg" alt="Teacher with Student">
+        </div>
+    </section>
+
+    <!-- Facilities Section with Facility Items -->
+    <section id="facilities" class="facilities">
+        <h3>Facilities</h3>
+        <div class="facilities-grid">
+            <div class="facility-item">
+                <h4>Library</h4>
+                <img src="./index_files/art3.2.jpg" alt="Library" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>Extensive collection of books and digital resources.</p>
+            </div>
+            <div class="facility-item">
+                <h4>Sports Complex</h4>
+                <img src="./index_files/f1908a_0ee0a538665f4b3faa72167549050db1~mv2.jpeg" alt="Sports Complex" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>State-of-the-art facilities for a variety of sports.</p>
+            </div>
+            <div class="facility-item">
+                <h4>Science Labs</h4>
+                <img src="./index_files/1-12d-768x512.jpg" alt="Science Lab" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>Fully equipped labs for hands-on learning.</p>
+            </div>
+            <div class="facility-item">
+                <h4>Computer Labs</h4>
+                <img src="./index_files/1.JPG" alt="Computer Lab" style="width: 100%; height: auto; border-radius: 8px;">
+                <p>Modern computer labs with the latest technology.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h3>Contact Us</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required="">
+            <input type="email" placeholder="Your Email" required="">
+            <textarea rows="4" placeholder="Your Message" required=""></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+    
+</body></html>
